@@ -11,7 +11,7 @@ function Products() {
     ];
 
   return (
-    <div>
+    <div className='mt-20 bg-zinc-900'>
         {products.map((val, index) => <Product val={val} />)}
     </div>
   )
