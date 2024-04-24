@@ -17,7 +17,7 @@ function Footer() {
                     {["instagram","twitter","linkedIn"].map((item , index) => <a className='block mt-2 capitalize text-zinc-600'>{item}</a> )}
                 </div>
                 <div className='basis-1/2 mt-12'>
-                    <p>This is some bullshit bottom liine heheh .nobody looks at it, it shold be ded.</p>
+                    <p>Redefining the creative world with design, innovation, and forward-thinking.Come work with us!</p>
                 </div>
             </div>
 

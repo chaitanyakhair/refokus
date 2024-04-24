@@ -1,15 +1,17 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function Card({width , start , para , hover}) {
+
   return (
-    <div className={` bg-zinc-800 rounded-xl p-5 hover:${hover} ${width} min-h-[30rem] flex flex-col justify-between`}>
+    <motion.div whileHover={{backgroundColor: hover ==="true" && "#7443ff", padding:"25px"}} className={` bg-zinc-800 rounded-xl p-5 ${width} min-h-[30rem] flex flex-col justify-between`}>
         <div className='w-full'>
             <div className='flex w-full justify-between items-center'>
-                <h3>One heading</h3>
+                <h3>Let's GO!</h3>
                 <FaArrowRightLong />
             </div>
-            <h1 className='text-3xl font-medium mt-5'>Whatever nigga</h1>
+            <h1 className='text-3xl font-medium mt-5'>Building Worldclass Projects</h1>
         </div>
         <div className='down w-full'>
         {
@@ -22,7 +24,7 @@ function Card({width , start , para , hover}) {
         }
         {
             para && (
-                <p className='text-sm text-zinc-500 font-medium'>This is a small something writing fuck it</p>
+                <p className='text-sm text-zinc-500 font-medium'>From Brands to websites our work speaks itself!</p>
             )
         }
             
@@ -30,7 +32,7 @@ function Card({width , start , para , hover}) {
         </div>
         
 
-    </div>
+    </motion.div>
   )
 }
 
